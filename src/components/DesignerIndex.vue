@@ -17,13 +17,13 @@
        <td>{{designer.sede}}</td>
        <td>
        <router-link class="button"
-         :to="'/designer/show/'+designer._id">Show</router-link>
+         :to="'/designer/show/'+designer.id">Show</router-link>
        &nbsp;
        <router-link class="button"
-         :to="'/designer/edit/'+designer._id">Edit</router-link>
+         :to="'/designer/edit/'+designer.id">Edit</router-link>
        &nbsp;
        <a class="button"
-         v-on:click="deleteDesigner(designer._id)">Erase</a>
+         v-on:click="deleteDesigner(designer.id)">Erase</a>
        </td>
        </tr></tbody>
      </table>
