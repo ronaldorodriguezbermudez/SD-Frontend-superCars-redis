@@ -56,7 +56,7 @@ export default {
     else {
       this.designer = {
        
-        '_id': Math.floor(Math.random()*100000000),'nombre':'','fundacion':'','sede':''};
+        'id': Math.floor(Math.random()*100000000),'nombre':'','fundacion':'','sede':''};
     }
   },
   methods: {
