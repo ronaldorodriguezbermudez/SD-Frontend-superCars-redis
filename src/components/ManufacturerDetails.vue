@@ -28,7 +28,7 @@
       <router-link class="button button-primary" 
         to="/manufacturer">Back</router-link>
        <a v-if='edit' class="button button-primary" style="float: right"
-         v-on:click="updateManufacturer(manufacturer._id)">Update</a>
+         v-on:click="updateManufacturer(manufacturer.id)">Update</a>
        <a v-if='create' class="button button-primary" style="float: right"
          v-on:click="createManufacturer()">Create</a>
      </div>
@@ -56,7 +56,7 @@ export default {
     else {
       this.manufacturer = {
        
-        '_id': Math.floor(Math.random()*100000000),'nombre':'','fundacion':'','sede':''};
+        'id': Math.floor(Math.random()*100000000),'nombre':'','fundacion':'','sede':''};
     }
   },
   methods: {

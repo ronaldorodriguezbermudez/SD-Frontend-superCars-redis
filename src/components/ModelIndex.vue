@@ -22,13 +22,13 @@
        <td>{{model.precio_usd}}</td>
        <td>
        <router-link class="button"
-         :to="'/model/show/'+model._id">Show</router-link>
+         :to="'/model/show/'+model.id">Show</router-link>
        &nbsp;
        <router-link class="button"
-         :to="'/model/edit/'+model._id">Edit</router-link>
+         :to="'/model/edit/'+model.id">Edit</router-link>
        &nbsp;
        <a class="button"
-         v-on:click="deleteModel(model._id)">Erase</a>
+         v-on:click="deleteModel(model.id)">Erase</a>
        </td>
        </tr></tbody>
      </table>

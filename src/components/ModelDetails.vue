@@ -54,7 +54,7 @@
             v-if="edit"
             class="button button-primary"
             style="float: right"
-            v-on:click="updateModel(model._id)"
+            v-on:click="updateModel(model.id)"
             >Update</a
           >
           <a
@@ -87,7 +87,7 @@ export default {
     if (route.params.id != null) this.findModel(route.params.id);
     else {
       this.model = {
-        _id: Math.floor(Math.random() * 100000000),
+        id: Math.floor(Math.random() * 100000000),
         nombre : "",
         potencia_hp: "",
         velocidad_maxima_mph: "",

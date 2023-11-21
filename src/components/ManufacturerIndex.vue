@@ -18,13 +18,13 @@
        <td>{{manufacturer.sede}}</td>
        <td>
        <router-link class="button"
-         :to="'/manufacturer/show/'+manufacturer._id">Show</router-link>
+         :to="'/manufacturer/show/'+manufacturer.id">Show</router-link>
        &nbsp;
        <router-link class="button"
-         :to="'/manufacturer/edit/'+manufacturer._id">Edit</router-link>
+         :to="'/manufacturer/edit/'+manufacturer.id">Edit</router-link>
        &nbsp;
        <a class="button"
-         v-on:click="deleteManufacturer(manufacturer._id)">Erase</a>
+         v-on:click="deleteManufacturer(manufacturer.id)">Erase</a>
        </td>
        </tr></tbody>
      </table>
